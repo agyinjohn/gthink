@@ -27,7 +27,7 @@
       "email": "gthinkcompanylimited@gmail.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Asheley Botwe School Junction, Nmai Dzorn Road",
+        "streetAddress": "Ashale Botwe, Nmai Dzorn Road",
         "addressLocality": "Accra",
         "addressCountry": "GH"
       },
@@ -1191,9 +1191,17 @@
             margin-top: 16px;
         }
 
+        .map-wrap {
+            margin-top: 40px;
+            border-radius: 14px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+        }
+
         .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.07);
-            padding-top: 32px;
+            padding-top: 24px;
+            margin-top: 48px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -1202,8 +1210,8 @@
         }
 
         .footer-bottom p {
-            color: rgba(255, 255, 255, 0.75);
-            font-size: 0.8rem;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 0.78rem;
         }
 
         .footer-tags {
@@ -1213,13 +1221,99 @@
         }
 
         .footer-tag {
-            color: rgba(255, 255, 255, 0.65);
-            font-size: 0.7rem;
-            background: rgba(255, 255, 255, 0.08);
+            color: rgba(255, 255, 255, 0.45);
+            font-size: 0.68rem;
+            background: rgba(255, 255, 255, 0.06);
             padding: 3px 10px;
             border-radius: 4px;
             text-transform: uppercase;
             letter-spacing: 0.07em;
+        }
+
+        .site-footer {
+            background: #050d18;
+            padding: 64px 0 32px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.4fr;
+            gap: 48px;
+            padding-bottom: 48px;
+        }
+
+        .footer-brand p {
+            color: rgba(255,255,255,0.45);
+            font-size: 0.85rem;
+            line-height: 1.7;
+            margin-top: 16px;
+            max-width: 260px;
+        }
+
+        .footer-logo {
+            font-size: 1.3rem;
+        }
+
+        .footer-socials {
+            display: flex;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .footer-socials a {
+            width: 38px;
+            height: 38px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .footer-socials a:hover {
+            background: rgba(42,125,225,0.15);
+            border-color: rgba(42,125,225,0.4);
+        }
+
+        .footer-col h4 {
+            font-family: 'Syne', sans-serif;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: rgba(255,255,255,0.9);
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 18px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-col ul li,
+        .footer-col ul li a {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.84rem;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent);
+        }
+
+        .footer-contact-list li {
+            display: flex;
+            gap: 8px;
+            align-items: flex-start;
+            line-height: 1.5;
         }
 
         .section-label-gold { color: var(--gold); }
@@ -2075,7 +2169,7 @@
                         <div class="c-icon">📍</div>
                         <div>
                             <span>Location</span>
-                            <strong>Asheley Botwe School Junction (Nmai Dzorn Road), Accra, Ghana</strong>
+                            <strong><a href="https://maps.app.goo.gl/fDJ4e1ef918P43ry9?g_st=ic" target="_blank" rel="noopener noreferrer">Ashale Botwe (Nmai Dzorn Road), Accra - Ghana</a></strong>
                         </div>
                     </div>
                     <div class="c-row">
@@ -2092,14 +2186,6 @@
                         <div>
                             <span>Email</span>
                             <a href="mailto:gthinkcompanylimited@gmail.com">gthinkcompanylimited@gmail.com</a>
-                        </div>
-                    </div>
-                    <div class="c-row">
-                        <div class="c-icon">👤</div>
-                        <div>
-                            <span>Chief Executive Officer</span>
-                            <strong>Solomon Owuraku Ashia</strong>
-                            <a href="mailto:ashiasolomon@gmail.com">ashiasolomon@gmail.com</a>
                         </div>
                     </div>
                     <div class="c-row">
@@ -2121,8 +2207,58 @@
                     <p class="cta-note">Sign up to our IT Support Services and Go Digital with GTHINK</p>
                 </div>
             </div>
+            <div class="map-wrap fu">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.2181074080477!2d-0.12939909999999996!3d5.6815838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf83003a1f14e9%3A0xae9b05d357954d11!2sGTHINK%20Group!5e0!3m2!1sen!2sgh!4v1773946276447!5m2!1sen!2sgh" width="100%" height="360" style="border:0;border-radius:14px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ── FOOTER ── -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a class="nav-logo footer-logo" href="#"><span class="g">G</span><span class="think">THINK</span><span class="sub">Company Limited</span></a>
+                    <p>Reliable IT support and digital solutions for businesses, enterprises, and institutions across Ghana.</p>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/233241550366" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">💬</a>
+                        <a href="mailto:gthinkcompanylimited@gmail.com" aria-label="Email">✉️</a>
+                        <a href="tel:+233241550366" aria-label="Call">📞</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Creative Design</a></li>
+                        <li><a href="#services">Printing Services</a></li>
+                        <li><a href="#services">Tech – Digital Solutions</a></li>
+                        <li><a href="#services">Digital Media</a></li>
+                        <li><a href="#services">Digital Innovations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#why">Why GTHINK</a></li>
+                        <li><a href="#sla">Service Level Agreement</a></li>
+                        <li><a href="#pricing">Our Plans</a></li>
+                        <li><a href="#payment">Payment Terms</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul class="footer-contact-list">
+                        <li>📍 <a href="https://maps.app.goo.gl/fDJ4e1ef918P43ry9?g_st=ic" target="_blank" rel="noopener noreferrer">Ashale Botwe (Nmai Dzorn Road),<br>Accra - Ghana</a></li>
+                        <li>📞 <a href="tel:+233241550366">+233 241 550 366</a></li>
+                        <li>📞 <a href="tel:+233256791600">+233 256 791 600</a></li>
+                        <li>✉️ <a href="mailto:gthinkcompanylimited@gmail.com">gthinkcompanylimited@gmail.com</a></li>
+                        <li>📦 CT 6214, Cantonments, Accra</li>
+                    </ul>
+                </div>
+            </div>
             <div class="footer-bottom">
-                <p>© GTHINK Company Limited 2026. All rights reserved.</p>
+                <p>© 2018 – <span id="footer-year"></span> GTHINK Company Limited. All rights reserved.</p>
                 <div class="footer-tags">
                     <span class="footer-tag">Technology (IT)</span>
                     <span class="footer-tag">Tech Hub</span>
@@ -2132,7 +2268,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <!-- WhatsApp floating button -->
     <a class="whatsapp-btn" href="https://wa.me/233241550366" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">

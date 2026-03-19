@@ -189,6 +189,24 @@
             box-shadow: 0 6px 20px rgba(42, 125, 225, 0.4);
         }
 
+        .nav-download {
+            color: var(--accent);
+            border: 1px solid var(--accent);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.82rem;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: 0.03em;
+            transition: background 0.2s, color 0.2s;
+        }
+
+        .nav-download:hover {
+            background: var(--accent);
+            color: white;
+        }
+
         /* ── HAMBURGER ── */
         .hamburger {
             display: none;
@@ -1248,7 +1266,8 @@
             }
 
             .nav-links,
-            nav>.nav-cta {
+            nav>.nav-cta,
+            nav>.nav-download {
                 display: none;
             }
 
@@ -1674,6 +1693,7 @@
             <li><a href="#payment">Payment</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <a href="files/GTHINK COMPANY LTD. - BUSINESS PROPOSAL AND BROCHURE.pdf" download class="nav-download">⬇ Brochure</a>
         <a href="#contact" class="nav-cta">Get in Touch</a>
         <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" role="button" tabindex="0">
             <span></span><span></span><span></span>
@@ -1687,6 +1707,7 @@
         <a href="#sla" class="mobile-link">SLA</a>
         <a href="#payment" class="mobile-link">Payment</a>
         <a href="#contact" class="mobile-link">Contact</a>
+        <a href="files/GTHINK COMPANY LTD. - BUSINESS PROPOSAL AND BROCHURE.pdf" download class="nav-download">⬇ Download Brochure</a>
         <a href="#contact" class="nav-cta">Get in Touch</a>
     </div>
 
@@ -1699,7 +1720,7 @@
             <div>
                 <div class="hero-badge">
                     <span class="dot"></span>
-                    Est. 2018 &nbsp;·&nbsp; Registered 2018 &nbsp;·&nbsp; Accra, Ghana
+                    Est. 2018 &nbsp;·&nbsp; Accra, Ghana
                 </div>
                 <h1>IT Support &amp; <em>Digital Solutions</em> for Your Business</h1>
                 <p class="hero-desc">GTHINK Company Limited is a wholly owned Ghanaian technology solutions provider
@@ -1725,7 +1746,7 @@
                         <span class="label">Service Areas</span>
                     </div>
                     <div class="stat-card stat-wide">
-                        <span class="num">Businesses · Enterprises · Institutions · Organizations · Individuals</span>
+                        <span class="num">Businesses · Enterprises · Institutions · Organizations</span>
                         <span class="label">We Serve All Sectors</span>
                     </div>
                 </div>
@@ -1830,31 +1851,28 @@
     <section id="pricing">
         <div class="container">
             <div class="section-hd fu">
-                <div class="section-label section-label-gold">Transparent Pricing</div>
+                <div class="section-label section-label-gold">Our Plans</div>
                 <h2 class="section-title">Flexible Plans for Every Business</h2>
-                <p class="section-sub">Choose a payment model that works for your budget. All prices are subject to
-                    negotiation and subscriptions attract discounts.</p>
+                <p class="section-sub">Choose a plan that works for your business. Contact us to discuss pricing tailored to your needs.</p>
             </div>
             <div class="pricing-grid">
 
                 <div class="pricing-card fu fu-d1">
-                    <h3>One-Time</h3>
-                    <div class="pricing-amount">GH¢350+</div>
+                    <h3>Basic</h3>
                     <p class="pricing-desc">Pay per project, no commitment</p>
                     <ul class="pricing-feats">
-                        <li>Creative designs from GH¢350</li>
-                        <li>Tech solutions from GH¢5,000</li>
-                        <li>Media services from GH¢500</li>
-                        <li>Enterprise systems from GH¢5,000</li>
-                        <li>Printing by quote</li>
+                        <li>Creative designs</li>
+                        <li>Tech solutions</li>
+                        <li>Media services</li>
+                        <li>Enterprise systems</li>
+                        <li>Printing services</li>
                     </ul>
                 </div>
 
                 <div class="pricing-card featured fu fu-d2">
                     <div class="featured-badge">Most Popular</div>
-                    <h3>Monthly</h3>
-                    <div class="pricing-amount">GH¢1,000+</div>
-                    <p class="pricing-desc">Per month · includes discount</p>
+                    <h3>Standard</h3>
+                    <p class="pricing-desc">Monthly retainer · includes discount</p>
                     <ul class="pricing-feats">
                         <li>Unlimited creative designs</li>
                         <li>Website management &amp; maintenance</li>
@@ -1865,11 +1883,10 @@
                 </div>
 
                 <div class="pricing-card fu fu-d3">
-                    <h3>Annual</h3>
-                    <div class="pricing-amount">GH¢12,000+</div>
-                    <p class="pricing-desc">Per year · best value</p>
+                    <h3>Premium</h3>
+                    <p class="pricing-desc">Annual retainer · best value</p>
                     <ul class="pricing-feats">
-                        <li>Everything in monthly</li>
+                        <li>Everything in Standard</li>
                         <li>Unlimited creative designs</li>
                         <li>Maximum discount applied</li>
                         <li>Dedicated account manager</li>

@@ -845,6 +845,27 @@
             font-weight: 300;
         }
 
+        .pricing-brochure-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 18px;
+            background: rgba(232, 160, 32, 0.12);
+            border: 1px solid rgba(232, 160, 32, 0.35);
+            color: var(--gold);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.2s, border-color 0.2s;
+        }
+
+        .pricing-brochure-btn:hover {
+            background: rgba(232, 160, 32, 0.22);
+            border-color: rgba(232, 160, 32, 0.6);
+        }
+
         .pricing-card.featured .pricing-desc {
             color: rgba(255, 255, 255, 0.75);
         }
@@ -1475,6 +1496,11 @@
                 padding: 30px 28px;
             }
 
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 32px;
+            }
+
             .footer-bottom {
                 flex-direction: column;
                 align-items: flex-start;
@@ -1757,6 +1783,11 @@
                 padding: 13px;
             }
 
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 28px;
+            }
+
             .footer-bottom {
                 gap: 12px;
             }
@@ -1977,6 +2008,7 @@
                 <div class="section-label section-label-gold">Our Plans</div>
                 <h2 class="section-title">Flexible Plans for Every Business</h2>
                 <p class="section-sub">Choose a plan that works for your business. Contact us to discuss pricing tailored to your needs.</p>
+                <a href="files/GTHINK COMPANY LTD. - BUSINESS PROPOSAL AND BROCHURE.pdf" download class="pricing-brochure-btn">⬇ Download Brochure for Pricing Details</a>
             </div>
             <div class="pricing-grid">
 
@@ -2310,6 +2342,7 @@
             entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('vis'); observer.unobserve(e.target); } });
         }, { threshold: 0.1 });
         document.querySelectorAll('.fu').forEach(el => observer.observe(el));
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
     </script>
 </body>
 

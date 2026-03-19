@@ -622,8 +622,12 @@
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 22px;
+        }
+
+        .service-card.svc-wide {
+            grid-column: 1 / -1;
         }
 
         .service-card {
@@ -722,6 +726,25 @@
             font-weight: 600;
             padding: 5px 12px;
             border-radius: 6px;
+        }
+
+        .sector-tags {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .sector-tags span {
+            background: rgba(42, 125, 225, 0.12);
+            border: 1px solid rgba(42, 125, 225, 0.25);
+            color: rgba(255, 255, 255, 0.85);
+            font-size: 0.8rem;
+            font-weight: 500;
+            padding: 5px 14px;
+            border-radius: 20px;
+            letter-spacing: 0.02em;
         }
 
         .svc-wide {
@@ -1746,7 +1769,13 @@
                         <span class="label">Service Areas</span>
                     </div>
                     <div class="stat-card stat-wide">
-                        <span class="num">Businesses · Enterprises · Institutions · Organizations</span>
+                        <div class="sector-tags">
+                            <span>Businesses</span>
+                            <span>Enterprises</span>
+                            <span>Institutions</span>
+                            <span>Organizations</span>
+                            <span>Individuals</span>
+                        </div>
                         <span class="label">We Serve All Sectors</span>
                     </div>
                 </div>
@@ -1782,7 +1811,7 @@
                         <li>Social media posts &amp; digital ads</li>
                         <li>Brand identity &amp; brand management</li>
                     </ul>
-                    <span class="price-tag">From GH¢350 / one-time · GH¢1,000/mo subscription</span>
+
                 </div>
 
                 <div class="service-card fu fu-d2">
@@ -1796,7 +1825,7 @@
                         <li>T-shirts, branded items &amp; souvenirs</li>
                         <li>2D &amp; 3D printing, signage &amp; vehicle branding</li>
                     </ul>
-                    <span class="price-tag">Pricing by project · Open negotiation</span>
+
                 </div>
 
                 <div class="service-card fu fu-d3">
@@ -1810,7 +1839,7 @@
                         <li>Database support &amp; IT security</li>
                         <li>IT advisory, planning &amp; consulting</li>
                     </ul>
-                    <span class="price-tag">From GH¢5,000 dev · GH¢1,000/mo maintenance</span>
+
                 </div>
 
                 <div class="service-card fu fu-d4">
@@ -1824,7 +1853,7 @@
                         <li>Bulk SMS &amp; digital marketing</li>
                         <li>Social media management</li>
                     </ul>
-                    <span class="price-tag">From GH¢500 / one-time · GH¢1,000+/mo</span>
+
                 </div>
 
                 <div class="service-card fu fu-d5 svc-wide">
@@ -1840,7 +1869,7 @@
                         <li>IT Managed Services</li>
                         <li>Custom platforms, portals &amp; products</li>
                     </ul>
-                    <span class="price-tag">From GH¢5,000 – GH¢20,000+ · GH¢1,000/mo maintenance</span>
+
                 </div>
 
             </div>

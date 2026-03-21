@@ -777,6 +777,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 22px;
+            align-items: stretch;
         }
 
         .pricing-card {
@@ -786,6 +787,9 @@
             padding: 38px 28px;
             transition: all 0.3s;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
         }
 
         .pricing-card.featured {
@@ -876,6 +880,7 @@
 
         .pricing-feats {
             list-style: none;
+            flex: 1;
         }
 
         .pricing-feats li {
@@ -2036,6 +2041,10 @@
                         <li>Enterprise systems</li>
                         <li>Printing services</li>
                         <li>Tech devices</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured fu fu-d2">
                     <div class="featured-badge">Most Popular</div>
                     <h3>Standard</h3>
                     <p class="pricing-desc">Monthly retainer · includes discount</p>
@@ -2046,6 +2055,10 @@
                         <li>Enterprise system support</li>
                         <li>Priority IT support</li>
                         <li>Tech devices</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card fu fu-d3">
                     <h3>Premium</h3>
                     <p class="pricing-desc">Annual retainer · best value</p>
                     <ul class="pricing-feats">
